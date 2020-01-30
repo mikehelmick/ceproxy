@@ -8,3 +8,6 @@ spec:
     spec:
       containers:
         - image: ko://github.com/mikehelmick/ceproxy
+          env:
+          - name: broker
+            value: http://default-broker.default.svc.cluster.local
